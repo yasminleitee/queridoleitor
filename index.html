@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Site sobre resumo de livros">
+  <meta name="keywords" content="Livros, sinopse, romance">
+  <meta name="author" content="Yasmin Leite">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/book.ico" />
+  <link rel="stylesheet" href="../css/style.css" id="style">
+  <title>Querido Leitor</title>
+
+  <script>
+    function changeTheme() {
+      var inputDarkMode = document.getElementById('toogle');
+
+      if (inputDarkMode.checked) {
+        document.getElementById('style').href = '../css/style-dark.css';
+      }
+      else {
+        document.getElementById('style').href = '../css/style.css';
+      }
+    }
+  </script>
+
+</head>
+
+<body id="modo">
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <span>Querido Leitor</span>
+      </div>
+      <ul>
+        <li><a href="index.html" target="_self">Home</a></li>
+        <li><a href="../paginas/outlander.html" target="_self">Outlander</a></li>
+        <li><a href="../paginas/trilogiaverao.html" target="_self">Trilogia Verão</a></li>
+        <li><a href="../paginas/bridgerton.html" target="_self">Bridgerton</a></li>
+        <li><a href="../paginas/starcrossed.html" target="_self">Starcrossed</a></li>
+        <li>
+          <input id="toogle" class="toogle" type="checkbox" NAME="grupo1" onclick="changeTheme()" value="valor1">
+          <label for="toogle"></label>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <h3>
+      Livros não mudam o mundo, quem muda o mundo são as pessoas.
+      Os livros só mudam as pessoas - Mario Quintana
+    </h3>
+
+    <h1 class="inicio">
+      Aqui você encontra resenhas de livros, dicas de leituras,
+      e vai descobrir que os livros possuem magia e beleza!
+    </h1>
+
+    <img class="img1" src="../img/livro6.jpg" alt="livros em uma estante">
+  </main>
+
+  <footer> </footer>
+
+</body>
+
+</html>
